@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-	--padding-inline: clamp(1rem,5vw,4rem);
+	--padding-inline: clamp(1rem, 5vw, 4rem);
 	--content-max-width: 90rem;
 	--breakout-max-width: 100rem;
 }
@@ -15,10 +15,8 @@
 			0,
 			calc((var(--breakout-max-width) - var(--content-max-width)) / 2)
 		)
-		[content-start] min(
-			100% - (2 * var(--padding-inline)),
-			var(--content-max-width)
-		) [content-end] minmax(0, calc((var(--breakout-max-width) - var(--content-max-width)) / 2))
+		[content-start] min(100% - (2 * var(--padding-inline)), var(--content-max-width))
+		[content-end] minmax(0, calc((var(--breakout-max-width) - var(--content-max-width)) / 2))
 		[breakout-end] minmax(var(--padding-inline), 1fr) [full-width-end];
 }
 
