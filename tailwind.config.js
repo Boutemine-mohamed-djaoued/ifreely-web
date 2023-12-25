@@ -1,13 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
+  content: ['./src/**/*.{html,js,svelte,ts}', './node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'],
   theme: {
     colors: {
       'accent': '#FF00A8',
-      'gray': {
-        300: '#F4F4F4',
-        400: '#B9B9B9',
-      },
       'black': "#000",
       'off-black': '#181818',
       'white': '#fff',
@@ -27,6 +23,6 @@ export default {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 }
 

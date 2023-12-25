@@ -31,3 +31,13 @@
 .grid-system > .full-width {
 	grid-column: full-width;
 }
+
+img {
+	font-style : italic ;
+	background-repeat : no-repeat ;
+	background-size : cover ;
+	display :block  ;
+	max-width : 100% ;
+	vertical-align : middle ;
+	shape-margin : 0.75rem ;
+}
