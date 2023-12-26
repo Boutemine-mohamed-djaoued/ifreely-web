@@ -61,7 +61,7 @@
 	});
 </script>
 
-<section class="bg-off-white py-5 md:py-10">
+<section class="bg-off-white pt-5 md:pt-10 pb-20 md:pb-32">
 	<h1 class="text-500 md:text-700 bg-white relative z-10 font-bold mb-5 md:mb-10 w-fit">
 		Hear it from them!
 	</h1>
