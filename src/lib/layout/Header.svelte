@@ -14,7 +14,6 @@
 		}
 	};
 </script>
-
 <div class="full-width grid-system shadow-lg sticky top-0 w-full bg-off-white z-[9999]">
 	<header class="py-[0.5em] text-400 font-semibold flex justify-between items-center bg-off-white">
 		<button
@@ -55,7 +54,7 @@
 						>
 							Explore
 							<svg
-								class="inline-block"
+								class="inline-block fill-black"
 								xmlns="http://www.w3.org/2000/svg"
 								width="14"
 								height="9"
