@@ -4,7 +4,7 @@
   import Header from "../lib/layout/Header.svelte";
 </script>
 
-<div class="grid-system">
+<div class="grid-system overflow-y-clip">
   <Header></Header>
   <slot />
 </div>

@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<section class="bg-off-white full-width grid-system max-md:overflow-x-clip">
+<section class="pb-5 bg-off-white full-width grid-system max-md:overflow-x-clip">
 	<div class="max-md:mt-12 md:flex justify-between items-center md:min-h-[50vh]">
 		<div class="text">
 			<h1
