@@ -89,7 +89,7 @@
 		left: 0;
 		top: 50%;
 		transform: translateY(-30%);
-		background: black;
+		@apply bg-off-black ;
 	}
 	/* verticale black bar */
 	section::before {
@@ -101,6 +101,6 @@
 		left: 50%;
 		transform: translateX(-50%);
 		top: 50%;
-		background: black;
+		@apply bg-off-black ;
 	}
 </style>
