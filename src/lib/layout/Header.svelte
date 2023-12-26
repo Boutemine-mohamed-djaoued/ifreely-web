@@ -15,7 +15,7 @@
 	};
 </script>
 <div class="full-width grid-system shadow-lg sticky top-0 w-full bg-off-white z-[9999]">
-	<header class="py-[0.5em] text-400 font-semibold flex justify-between items-center bg-off-white">
+	<header class="py-[0.5em] text-400 font-semibold flex justify-between items-center bg-off-white">u
 		<button
 			on:click={() => {
 				handleClick();
