@@ -67,10 +67,10 @@
 		</div>
 	</div>
 	<div
-		class="text-white translate-x-8 translate-y-5 2xl:translate-x-16 xl:translate-y-7 swiper-button-next"
+		class="!text-white translate-x-8 translate-y-5 2xl:translate-x-16 xl:translate-y-7 swiper-button-next"
 	></div>
 	<div
-		class="text-white -translate-x-8 translate-y-5 2xl:-translate-x-16 xl:translate-y-7 swiper-button-prev"
+		class="!text-white -translate-x-8 translate-y-5 2xl:-translate-x-16 xl:translate-y-7 swiper-button-prev"
 	></div>
 </section>
 

@@ -110,10 +110,10 @@
 			{/if}
 		</div>
 	</div>
-	<div class="swiper-button-next  md:w-[3rem] -right-4 md:-right-10">
+	<div class="swiper-button-next  !md:w-[3rem] !-right-4 !md:-right-10">
 		<img src="assets/home/Next page.png" alt="next card" />
 	</div>
-	<div class="swiper-button-prev rotate-180 md:w-[3rem] -left-4 md:-left-10">
+	<div class="swiper-button-prev rotate-180 !md:w-[3rem] !-left-4 !md:-left-10">
 		<img src="assets/home/Next page.png" alt="next card" />
 	</div>
 </section>
