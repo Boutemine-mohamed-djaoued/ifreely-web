@@ -14,8 +14,9 @@
 		}
 	};
 </script>
-<div class="full-width grid-system shadow-lg sticky top-0 w-full bg-off-white z-[9999]">
-	<header class="py-[0.5em] text-400 font-semibold flex justify-between items-center bg-off-white">
+
+<header class="wrapper shadow-lg sticky top-0 w-full bg-off-white z-[9999]">
+	<div class="py-[0.5em] text-400 font-semibold flex justify-between bg-off-white items-center">
 		<button
 			on:click={() => {
 				handleClick();
@@ -35,23 +36,23 @@
 				/>
 			</svg>
 		</button>
-		<div class="logo text-accent text-500">Freeli</div>
-		<div class="left-content flex">
+		<!-- logo -->
+		<div class="text-accent text-500">Freeli</div>
+		<!-- the left content nav + join -->
+		<div class="flex">
 			<nav navbarVisibility="false">
 				<ul
 					class="font-medium max-md:bg-gray-100 max-md:rounded-md max-md:absolute max-md:top-[3.5em] max-md:left-[5%] max-md:w-[90%] max-md:px-5 max-md:py-3 md:flex items-center gap-5"
 				>
 					<li>
 						<button
-							class="cursor-pointer md:hover:text-accent max-md:text-left max-md:focus:bg-gray-200 max-md:w-full p-[0.5em] focus-visible:ring-2 ring-black rounded-sm"
+							class="max-md:focus:bg-gray-200 max-md:w-full p-[0.5em] focus-visible:ring-2 ring-black rounded-sm"
 						>
 							<img class="inline-block" src="assets/home/Globe.png" alt="Globe-icon" /> English
 						</button>
 					</li>
 					<li>
-						<button
-							class="cursor-pointer max-md:text-left max-md:focus:bg-gray-200 max-md:w-full rounded-md md:hover:text-accent p-[0.5em]"
-						>
+						<button class=" max-md:focus:bg-gray-200 max-md:w-full rounded-md p-[0.5em]">
 							Explore
 							<svg
 								class="inline-block fill-black"
@@ -72,19 +73,19 @@
 						<DropdownItem>Earnings</DropdownItem>
 						<DropdownItem>Sign out</DropdownItem>
 					</Dropdown>
-					<li class="">
+					<li>
 						<a
 							href="/"
-							class="cursor-pointer inline-block md:hover:text-accent max-md:text-left max-md:hover:bg-gray-200 max-md:w-full p-[0.5em] md:focus-visible:ring-2 ring-black rounded-sm"
+							class=" inline-block max-md:hover:bg-gray-200 max-md:w-full p-[0.5em] md:focus-visible:ring-2 ring-black rounded-sm"
 							>Log in</a
 						>
 					</li>
 				</ul>
 			</nav>
-			<a href="/" class="cursor-pointer md:hover:text-accent md:p-[0.5em] md:ml-5"> join </a>
+			<a href="/" class="join cursor-pointer md:p-[0.5em] md:ml-5">join</a>
 		</div>
-	</header>
-</div>
+	</div>
+</header>
 
 <style>
 	@media (max-width: 767px) {
@@ -92,8 +93,19 @@
 			transition: transform 0.7s ease-in-out;
 			z-index: -1;
 		}
+
 		nav[navbarVisibility='false'] ul {
 			transform: translateY(-150%);
+		}
+		ul li button {
+			text-align: left;
+		}
+	}
+	@media (min-width: 768px) {
+		ul li:hover,
+		.join:hover {
+			@apply text-accent;
+			cursor: pointer;
 		}
 	}
 </style>

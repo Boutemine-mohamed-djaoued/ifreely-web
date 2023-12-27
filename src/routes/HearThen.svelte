@@ -61,8 +61,8 @@
 	});
 </script>
 
-<section class="bg-off-white pt-5 md:pt-10 pb-20 md:pb-32">
-	<h1 class="text-500 md:text-700 bg-white relative z-10 font-bold mb-5 md:mb-10 w-fit">
+<section class="pt-5 md:pt-10 pb-20 md:pb-32 relative">
+	<h1 class="text-500 md:text-700 bg-off-white relative z-10 font-bold mb-5 md:mb-10 w-fit">
 		Hear it from them!
 	</h1>
 	<div class="swiper swiper-container-2 md:px-10">
@@ -74,7 +74,7 @@
 					>
 						<div class="bg-gray-100 grid gap-x-3 md:gap-x-6 max-lg:gap-y-6 p-5 rounded-lg">
 							<div class="profile-img max-md:min-w-[5rem] lg:row-start-1 lg:row-end-3">
-								<img src={rating.profileImg} alt="profile img" />
+								<img src={rating.profileImg} alt="profile img" loading="lazy" />
 							</div>
 							<div>
 								<div class="name font-bold text-400 sm:text-600 text-gray-400 text-opacity-40">
@@ -109,16 +109,19 @@
 				{/each}
 			{/if}
 		</div>
-		<div class="swiper-button-next text-transparent w-[3rem] -right-3 max-md:hidden">
-			<img src="assets/home/Next page.png" alt="next card" />
-		</div>
-		<div class="swiper-button-prev text-transparent rotate-180 w-[3rem] -left-3 max-md:hidden">
-			<img src="assets/home/Next page.png" alt="next card" />
-		</div>
+	</div>
+	<div class="swiper-button-next  md:w-[3rem] -right-4 md:-right-10">
+		<img src="assets/home/Next page.png" alt="next card" />
+	</div>
+	<div class="swiper-button-prev rotate-180 md:w-[3rem] -left-4 md:-left-10">
+		<img src="assets/home/Next page.png" alt="next card" />
 	</div>
 </section>
 
 <style>
+	.swiper-button-next::after , .swiper-button-prev::after {
+		content: '';
+	}
 	.swiper-slide > div{
 		grid-template-columns: 1fr 4fr;
 	}
