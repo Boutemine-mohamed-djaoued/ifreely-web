@@ -22,7 +22,7 @@
 	];
 </script>
 
-<section class="full-width grid-system bg-gray-100 py-5 lg:py-10 relative z-10">
+<section class="wrapper bg-gray-100 pt-5 pb-16 lg:py-10 relative z-10">
 	<div class="lg:flex items-center justify-between">
 		<div class="text">
 			<h2 class="text-700 font-bold mb-2 md:mb-5">Why us</h2>
@@ -51,6 +51,6 @@
 				</div>
 			{/each}
 		</div>
-		<img class="max-lg:mx-auto max-lg:max-w-[70%] lg:w-[clamp(10rem,35vw,37rem)]" src="assets/home/greenPeople.png" alt="some people wondering why they should pick us" />
+		<img class="max-lg:mx-auto max-lg:w-[min(70%,25rem)] lg:w-[clamp(10rem,35vw,37rem)]" src="assets/home/greenPeople.png" alt="some people wondering why they should pick us" />
 	</div>
 </section>

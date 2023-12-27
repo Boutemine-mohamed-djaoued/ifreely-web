@@ -43,7 +43,7 @@
 	});
 </script>
 
-<section class="full-width grid-system relative isolate bg-off-white overflow-x-clip max-sm:after:hidden max-md:before:hidden">
+<section class="wrapper relative isolate overflow-x-clip max-sm:after:hidden max-md:before:hidden">
 	<div class="full-width2 py-5 md:py-20">
 		<h2 class="max-md:ml-[clamp(0.5rem,5vw,2rem)] text-700 font-bold mb-2 md:mb-5">Categories</h2>
 		<div class="swiper swiper-container-1 md:w-full">
@@ -66,13 +66,23 @@
 			</div>
 		</div>
 	</div>
-	<div class="max-sm:hidden text-white translate-x-8 translate-y-5 2xl:translate-x-16 xl:translate-y-7 swiper-button-next"></div>
-	<div class="max-sm:hidden text-white -translate-x-8 translate-y-5 2xl:-translate-x-16 xl:translate-y-7  swiper-button-prev"></div>
+	<div
+		class="text-white translate-x-8 translate-y-5 2xl:translate-x-16 xl:translate-y-7 swiper-button-next"
+	></div>
+	<div
+		class="text-white -translate-x-8 translate-y-5 2xl:-translate-x-16 xl:translate-y-7 swiper-button-prev"
+	></div>
 </section>
 
 <style>
 	.full-width2 {
 		grid-column: full-width;
+	}
+	@media (max-width: 640px) {
+		.swiper-button-next::after,
+		.swiper-button-prev::after {
+			content: '';
+		}
 	}
 	@media (min-width: 767px) {
 		.full-width2 {
@@ -84,23 +94,23 @@
 		content: '';
 		z-index: -1;
 		width: 100vw;
-		height: clamp(6rem,10vw,9rem);
+		height: clamp(6rem, 10vw, 9rem);
 		position: absolute;
 		left: 0;
 		top: 50%;
 		transform: translateY(-30%);
-		@apply bg-off-black ;
+		@apply bg-off-black;
 	}
 	/* verticale black bar */
 	section::before {
 		content: '';
 		z-index: -1;
 		height: 1000vh;
-		width: clamp(6rem,10vw,9rem);
+		width: clamp(6rem, 10vw, 9rem);
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
 		top: 50%;
-		@apply bg-off-black ;
+		@apply bg-off-black;
 	}
 </style>

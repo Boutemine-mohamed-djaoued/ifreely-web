@@ -1,6 +1,6 @@
-<footer class="full-width grid-system bg-off-black text-white relative z-10 py-20 md:py-16">
+<footer class="wrapper bg-off-black text-white relative z-10 py-20 md:py-16">
 	<div class="">
-		<div class="links grid grid-cols-2 justity-center lg:grid-cols-4 text-400 max-lg:text-center max-md:hidden my-10">
+		<div class="links grid grid-cols-2 justity-center lg:grid-cols-4 text-400 text-center max-md:hidden my-10">
 			<div class="flex flex-col gap-2">
 				<h3 class="text-500 font-bold my-3">Categorie 1</h3>
 				<a href="/">Web dev & design</a><a href="/">Graphic design</a><a href="/">Content writing</a
@@ -59,6 +59,8 @@
 <style>
   .links a:hover{
     color :#FF00A8;
+		font-weight: bold;
+	opacity: 0.8;
   }
 	.join {
 		position: absolute;

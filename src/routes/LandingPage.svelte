@@ -1,11 +1,11 @@
 <script>
 </script>
 
-<section class="pb-5 bg-off-white full-width grid-system max-md:overflow-x-clip">
-	<div class="max-md:mt-12 md:flex justify-between items-center md:min-h-[50vh]">
+<section class="wrapper max-md:overflow-x-clip">
+	<div class="pb-5 max-md:mt-12 md:flex justify-between items-center md:min-h-[50vh]">
 		<div class="text">
 			<h1
-				class="max-md:w-fit max-md:mx-auto max-md:text-center font-semibold my-5 text-600 md:text-700 relative isolate"
+				class="text-nowrap max-md:w-fit max-md:mx-auto max-md:text-center font-semibold my-5 text-600 lg:text-700 relative isolate"
 			>
 				Turn ideas into <span class="text-accent">reality</span>
 				<img
@@ -20,19 +20,19 @@
 				/>
 			</h1>
 			<p
-				class="text-400 md:text-500 max-w-[30ch] max-md:text-center max-md:mx-auto my-4 text-balance"
+				class="text-400 lg:text-500 max-w-[30ch] max-md:text-center max-md:mx-auto my-4 text-balance"
 			>
 				Discover the best freelancers and contact them through
 			</p>
 			<div
-				class="input max-md:mx-auto my-5 rounded-md overflow-clip ring-2 ring-black flex w-[min(80%,18rem)] md:w-[max(65%,18rem)]"
+				class="input max-md:mx-auto my-5 rounded-md overflow-clip ring-2 ring-black flex w-[min(80%,18rem)] lg:w-[max(65%,18rem)]"
 			>
 				<input
-					class="text-300 md:text-400 w-[100%] border-none"
+					class="text-300 lg:text-400 w-[100%] border-none"
 					type="text"
 					placeholder="search for a service"
 				/>
-				<button class="icon w-[20%] bg-accent grid justify-center p-2 md:p-3">
+				<button class="icon w-[20%] bg-accent grid justify-center p-2 lg:p-3">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="26"
@@ -54,10 +54,14 @@
 				>
 					Become a <span class="text-accent">freelancer</span></a
 				>
-				<img class="tags md:hidden absolute -left-20 bottom-3" src="assets/home/tags.png" alt="tags" />
+				<img
+					class="tags md:hidden absolute -left-20 bottom-3"
+					src="assets/home/tags.png"
+					alt="tags"
+				/>
 			</div>
 		</div>
-		<div  class="img max-md:hidden">
+		<div class="img max-md:hidden">
 			<img
 				class="w-[clamp(20rem,55vw,50rem)]"
 				src="assets/home/landingImage.png"
@@ -73,7 +77,7 @@
 	.play {
 		z-index: -1;
 	}
-	.gear{
+	.gear {
 		animation: float 2.5s infinite alternate ease-in-out;
 	}
 	.play {
