@@ -15,13 +15,17 @@
 		{ title: 'Content writing', url: 'assets/home/writing.png' }
 	];
 	onMount(() => {
-		let swiper = new Swiper('.swiper-container-1', {
+		let swiper7 = new Swiper('.swiper-container-categories', {
 			modules: [Navigation],
 			direction: 'horizontal',
 			loop: true,
 			slidesPerView: 1.4,
 			spaceBetween: -40,
 			breakpoints: {
+				370: {
+					slidesPerView: 1.6,
+					spaceBetween: -30
+				},
 				640: {
 					slidesPerView: 2,
 					spaceBetween: -80
@@ -46,9 +50,8 @@
 <section class="wrapper relative isolate overflow-x-clip max-sm:after:hidden max-md:before:hidden">
 	<div class="full-width2 py-5 md:py-20">
 		<h2 class="max-md:ml-[clamp(0.5rem,5vw,2rem)] text-700 font-bold mb-2 md:mb-5">Categories</h2>
-		<div class="swiper swiper-container-1 md:w-full">
+		<div class="swiper swiper-container-categories md:w-full">
 			<div class="swiper-wrapper">
-				<!-- Slides -->
 				{#if categories}
 					{#each categories as categorie}
 						<div class="swiper-slide p-5">
