@@ -25,7 +25,7 @@
 <section class="wrapper bg-gray-100 pt-5 pb-16 lg:py-10 relative z-10">
 	<div class="lg:flex items-center justify-between">
 		<div class="text">
-			<h2 class="text-700 font-bold mb-2 md:mb-5">Why us</h2>
+			<h2 class="text-600 md:text-700 font-bold mb-2 md:mb-5">Why us</h2>
 			{#each points as point}
 				<div class="point flex">
 					<div class="icons mr-5 md:mr-10 mt-3 md:mt-5">
@@ -51,6 +51,14 @@
 				</div>
 			{/each}
 		</div>
-		<img class="max-lg:mx-auto max-lg:w-[min(70%,25rem)] lg:w-[clamp(10rem,35vw,37rem)]" src="assets/home/greenPeople.png" alt="some people wondering why they should pick us" />
+		<div class="max-lg:mx-auto max-lg:w-[min(70%,25rem)] lg:w-[clamp(10rem,35vw,37rem)] bg-no-repeat bg-cover aspect-[699/550]"
+		style="background-image:url('assets/home/greenPeople-lowres.png')"
+		>
+			<img
+				class="w-full"
+				src="assets/home/greenPeople4.png"
+				alt="some people wondering why they should pick us"
+			/>
+		</div>
 	</div>
 </section>

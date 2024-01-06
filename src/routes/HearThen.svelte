@@ -62,7 +62,7 @@
 </script>
 
 <section class="pt-5 md:pt-10 pb-20 md:pb-32 relative">
-	<h1 class="text-500 md:text-700 bg-off-white relative z-10 font-bold mb-5 md:mb-10 w-fit">
+	<h1 class="text-600 md:text-700 bg-off-white relative z-10 font-bold mb-5 md:mb-10 w-fit">
 		Hear it from them!
 	</h1>
 	<div class="swiper swiper-container-rating md:px-10">
@@ -71,8 +71,8 @@
 				{#each ratings as rating}
 					<div class="swiper-slide">
 						<div class="bg-gray-100 grid gap-x-3 md:gap-x-6 max-lg:gap-y-6 p-5 rounded-lg">
-							<div class="profile-img max-md:min-w-[5rem] lg:row-start-1 lg:row-end-3">
-								<img src={rating.profileImg} alt="profile img" loading="lazy" />
+							<div class="profile-img bg-gray-200 rounded-full aspect-square max-md:min-w-[5rem] lg:row-start-1 lg:row-end-3">
+								<img class="w-full" src={rating.profileImg} alt="profile img" loading="lazy" />
 							</div>
 							<div>
 								<div class="name font-bold text-400 sm:text-600 text-gray-400 text-opacity-40">
@@ -108,10 +108,10 @@
 			{/if}
 		</div>
 	</div>
-	<div class="swiper-button-next-rating max-lg:w-[2.5rem] absolute top-1/2 -translate-y-1/2 -right-4  lg:-right-10 z-20 cursor-pointer">
+	<div class="swiper-button-next-rating max-lg:w-[2.5rem] absolute top-1/2 -translate-y-1/2 -right-5  lg:-right-10 z-20 cursor-pointer">
 		<img src="assets/home/Next page.png" alt="next card" />
 	</div>
-	<div class="swiper-button-prev-rating max-lg:w-[2.5rem] rotate-180 absolute top-1/2 -translate-y-1/2 -left-4 lg:-left-10 z-20 cursor-pointer">
+	<div class="swiper-button-prev-rating max-lg:w-[2.5rem] rotate-180 absolute top-1/2 -translate-y-1/2 -left-5 lg:-left-10 z-20 cursor-pointer">
 		<img src="assets/home/Next page.png" alt="next card" />
 	</div>
 </section>

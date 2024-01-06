@@ -1,8 +1,8 @@
 <script>
 </script>
 
-<section class="wrapper max-md:overflow-x-clip">
-	<div class="pb-5 max-md:mt-12 md:flex justify-between items-center md:min-h-[50vh]">
+<section class="wrapper max-md:overflow-x-clip relative z-10">
+	<div class="pb-5 max-md:mt-12 md:flex justify-between items-center md:min-h-[30rem]">
 		<div class="text">
 			<h1
 				class="text-nowrap max-md:w-fit max-md:mx-auto max-md:text-center font-semibold my-5 text-600 lg:text-700 relative isolate"
@@ -50,7 +50,7 @@
 			<div class="md:translate-y-12 max-md:mx-auto w-fit relative my-5">
 				<a
 					href="/"
-					class="text-300 md:text-400 px-[1em] py-[0.5em] focus-visible:outline-accent bg-black text-white rounded-md font-medium"
+					class="text-300 md:text-400 px-[1em] py-[0.5em] focus-visible:outline-accent bg-black text-white rounded-md font-semibold"
 				>
 					Become a <span class="text-accent">freelancer</span></a
 				>
@@ -61,9 +61,12 @@
 				/>
 			</div>
 		</div>
-		<div class="img max-md:hidden">
+		<div
+			class="img max-md:hidden bg-no-repeat bg-cover aspect-[699/550] w-[clamp(20rem,55vw,50rem)]"
+			style="background-image:url('assets/home/landingImage-lowres.png')"
+		>
 			<img
-				class="w-[clamp(20rem,55vw,50rem)]"
+				class="w-full"
 				src="assets/home/landingImage.png"
 				alt="laptop ilustration"
 				loading="lazy"

@@ -47,7 +47,7 @@
 </script>
 
 <section class="wrapper py-5 md:py-10 bg-gray-100 relative isolate overflow-x-clip">
-	<h2 class="text-500 md:text-700 font-bold mb-2 md:mb-4">
+	<h2 class="text-600 md:text-700 font-bold mb-2 md:mb-4">
 		Top <span class="text-accent">Talent</span>&nbsp; :
 	</h2>
 	<div
@@ -67,7 +67,7 @@
 				{#if topTalents}
 					{#each topTalents as topTalent}
 						<div class="swiper-slide bg-white rounded-xl">
-							<div class="inline-size bg-white rounded-xl p-2 md:p-4 bg-opacity-90">
+							<div class="inline-size bg-white h-full rounded-xl p-2 md:p-4 bg-opacity-90">
 								<h3 class="font-bold text-[8cqi] text-center">
 									{topTalent.name}
 								</h3>
@@ -100,7 +100,7 @@
 			<div class="swiper-wrapper">
 				{#if topTalents}
 					{#each topTalents as topTalent}
-						<div class="swiper-slide blur-sm" style="background-image:url('{topTalent.pr3}')"></div>
+						<div class="swiper-slide" style="background-image:url('{topTalent.pr3}')"></div>
 					{/each}
 				{/if}
 			</div>
@@ -169,7 +169,7 @@
 		@apply w-full rounded-2xl;
 	}
 	.grid-layout .swiper-slide {
-		@apply bg-no-repeat bg-cover bg-center;
+		@apply bg-no-repeat bg-cover bg-center bg-gray-200;
 	}
 	section::after {
 		content: '';
@@ -181,6 +181,17 @@
 		top: 45%;
 		transform: translateY(-6.2vw);
 		@apply bg-off-black;
+	}
+	section::before {
+		content: '';
+		z-index: -1;
+		height: 100vh;
+		width: clamp(5rem, 10vw, 9rem);
+		position: absolute;
+		left: 50% ;
+		top: -100vh;
+		transform: translateX(-50%);
+		@apply bg-gray-100 md:hidden;
 	}
 	.work > div {
 		box-shadow: 0 0 15px 10px #ffffff45;
