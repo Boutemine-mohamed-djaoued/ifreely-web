@@ -37,12 +37,12 @@
 			</svg>
 		</button>
 		<!-- logo -->
-		<div class="text-accent text-500">Freeli</div>
+		<div class="text-accent text-500 max-md:pl-3">Freeli</div>
 		<!-- the left content nav + join -->
 		<div class="flex">
 			<nav navbarVisibility="false">
 				<ul
-					class="font-medium max-md:bg-gray-100 max-md:rounded-md max-md:absolute max-md:top-[3.5em] max-md:left-[5%] max-md:w-[90%] max-md:px-5 max-md:py-3 md:flex items-center gap-5"
+					class="font-mediu max-md:ring-2 max-md:ring-off-white max-md:bg-gray-100 max-md:rounded-md max-md:absolute max-md:top-[3.5em] max-md:left-[5%] max-md:w-[90%] max-md:px-5 max-md:py-3 md:flex items-center gap-5"
 				>
 					<li>
 						<button
