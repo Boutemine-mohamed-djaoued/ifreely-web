@@ -3,26 +3,24 @@
 	import Swiper from 'swiper/bundle';
 	import 'swiper/css/bundle';
 	import { Navigation } from 'swiper/modules';
-	import 'swiper/css';
-	import 'swiper/css/navigation';
 	let topTalents = [
 		{
-			profileImg: 'assets/home/profileImg2.png',
+			profileImg: 'home/topTalent/profileImg2.png',
 			name: 'Michael Scofield',
 			bio: "Web Developer 🚀 | Turning ideas into interactive websites 💻 | Coding wizard with HTML, CSS, and JavaScript ⚡ | Crafting digital experiences that stand out! 🎨 | Let's build something amazing together!",
-			pr1: 'assets/home/pr1.png',
-			pr2: 'assets/home/pr2.png',
-			pr3: 'assets/home/pr3.png',
-			pr4: 'assets/home/pr4.png'
+			pr1: 'home/topTalent/pr1.png',
+			pr2: 'home/topTalent/pr2.png',
+			pr3: 'home/topTalent/pr3.png',
+			pr4: 'home/topTalent/pr4.png'
 		},
 		{
-			profileImg: 'assets/home/profileImg3.png',
+			profileImg: 'home/topTalent/profileImg3.jpg',
 			name: 'Alex Swift',
 			bio: 'UI/UX virtuoso renowned for weaving digital wonders. With a meticulous blend of precision, creative flair, and an unwavering commitment to user delight, Alex navigates the design realm, shaping immersive and intuitive experiences. His expertise extends beyond aesthetics, delving into the very essence of user interaction. In collaboration with cross-functional teams, Alex not only envisions but materializes concepts that resonate with users, setting a benchmark for exceptional design. Welcome to the world of Alex Swift, where innovation meets elegance in the ever-evolving landscape of UI/UX design. 🌐✨',
-			pr1: 'assets/home/pr3.jpeg',
-			pr2: 'assets/home/pr1.jpeg',
-			pr3: 'assets/home/pr2.jpeg',
-			pr4: 'assets/home/pr4.jpeg'
+			pr1: 'home/topTalent/pr3.jpeg',
+			pr2: 'home/topTalent/pr1.jpeg',
+			pr3: 'home/topTalent/pr2.jpeg',
+			pr4: 'home/topTalent/pr4.jpeg'
 		}
 	];
 	let swipers = [];
@@ -40,6 +38,22 @@
 				navigation: {
 					nextEl: '.swiper-button-next-talent',
 					prevEl: '.swiper-button-prev-talent'
+				}
+			});
+			// Handle keyboard events for the next and pre button
+
+			var prevButton = document.querySelector('.swiper-button-prev-talent');
+			var nextButton = document.querySelector('.swiper-button-next-talent');
+
+			prevButton.addEventListener('keydown', function (event) {
+				if (event.key === 'Enter') {
+					swipers[i].slidePrev();
+				}
+			});
+
+			nextButton.addEventListener('keydown', function (event) {
+				if (event.key === 'Enter') {
+					swipers[i].slideNext();
 				}
 			});
 		}
@@ -123,36 +137,12 @@
 	<div
 		class="swiper-button-prev-talent absolute max-md:translate-y-[-6.2vw] top-[50%] md:top-[46%] -left-[3vw] rotate-180"
 	>
-		<svg
-			class="max-md:w-5"
-			xmlns="http://www.w3.org/2000/svg"
-			width="32"
-			height="32"
-			viewBox="0 0 32 32"
-			fill="none"
-		>
-			<path
-				d="M0 18L24.34 18L13.16 29.18L16 32L32 16L16 0L13.18 2.82L24.34 14L0 14L0 18Z"
-				fill="white"
-			/>
-		</svg>
+		<img class="max-md:w-5" src="home/topTalent/arrow.svg" alt="" />
 	</div>
 	<div
 		class="swiper-button-next-talent absolute max-md:translate-y-[-6.2vw] top-[50%] md:top-[46%] -right-[3vw]"
 	>
-		<svg
-			class="max-md:w-5"
-			xmlns="http://www.w3.org/2000/svg"
-			width="32"
-			height="32"
-			viewBox="0 0 32 32"
-			fill="none"
-		>
-			<path
-				d="M0 18L24.34 18L13.16 29.18L16 32L32 16L16 0L13.18 2.82L24.34 14L0 14L0 18Z"
-				fill="white"
-			/>
-		</svg>
+		<img class="max-md:w-5" src="home/topTalent/arrow.svg" alt="" />
 	</div>
 	<button
 		class="mx-auto mt-5 md:my-5 text-center w-[min(45vw,50rem)] text-300 sm:text-500 xl:text-600 font-bold py-2 lg:py-3 text-white bg-off-black"
@@ -188,7 +178,7 @@
 		height: 100vh;
 		width: clamp(5rem, 10vw, 9rem);
 		position: absolute;
-		left: 50% ;
+		left: 50%;
 		top: -100vh;
 		transform: translateX(-50%);
 		@apply bg-gray-100 md:hidden;
