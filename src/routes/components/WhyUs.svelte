@@ -27,20 +27,9 @@
 		<div class="text">
 			<h2 class="text-600 md:text-700 font-bold mb-2 md:mb-5">Why us</h2>
 			{#each points as point}
-				<div class="point flex">
+				<div class="point fContact Michael flex">
 					<div class="icons mr-5 md:mr-10 mt-3 md:mt-5">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="25"
-							height="25"
-							viewBox="0 0 25 25"
-							fill="none"
-						>
-							<path
-								d="M12.5 0C5.6 0 0 5.6 0 12.5C0 19.4 5.6 25 12.5 25C19.4 25 25 19.4 25 12.5C25 5.6 19.4 0 12.5 0ZM10 18.75L3.75 12.5L5.5125 10.7375L10 15.2125L19.4875 5.725L21.25 7.5L10 18.75Z"
-								fill="#181818"
-							/>
-						</svg>
+						<img src="home/whyUs/check.svg" alt="">
 					</div>
 					<div class="my-2 md:my-3">
 						<h3 class=" text-500 font-medium">{point.title}</h3>
@@ -52,11 +41,11 @@
 			{/each}
 		</div>
 		<div class="max-lg:mx-auto max-lg:w-[min(70%,25rem)] lg:w-[clamp(10rem,35vw,37rem)] bg-no-repeat bg-cover aspect-[699/550]"
-		style="background-image:url('assets/home/greenPeople-lowres.png')"
+		style="background-image:url('home/whyUs/greenPeople-lowres.png')"
 		>
 			<img
 				class="w-full"
-				src="assets/home/greenPeople4.png"
+				src="home/whyUs/greenPeople.png"
 				alt="some people wondering why they should pick us"
 			/>
 		</div>

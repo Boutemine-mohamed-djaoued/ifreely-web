@@ -2,17 +2,15 @@
 	import { onMount } from 'svelte';
 	import Swiper from 'swiper';
 	import { Navigation } from 'swiper/modules';
-	import 'swiper/css';
-	import 'swiper/css/navigation';
 	let categories = [
-		{ title: 'Web design', url: 'assets/home/web.png' },
-		{ title: 'Voice acting', url: 'assets/home/voice.png' },
-		{ title: 'Graphic design', url: 'assets/home/graphics.png' },
-		{ title: 'Content writing', url: 'assets/home/writing.png' },
-		{ title: 'Web design', url: 'assets/home/web.png' },
-		{ title: 'Voice acting', url: 'assets/home/voice.png' },
-		{ title: 'Graphic design', url: 'assets/home/graphics.png' },
-		{ title: 'Content writing', url: 'assets/home/writing.png' }
+		{ title: 'Web design', url: 'home/categories/web.png' },
+		{ title: 'Voice acting', url: 'home/categories/voice.png' },
+		{ title: 'Graphic design', url: 'home/categories/graphics.png' },
+		{ title: 'Content writing', url: 'home/categories/writing.png' },
+		{ title: 'Web design', url: 'home/categories/web.png' },
+		{ title: 'Voice acting', url: 'home/categories/voice.png' },
+		{ title: 'Graphic design', url: 'home/categories/graphics.png' },
+		{ title: 'Content writing', url: 'home/categories/writing.png' }
 	];
 	onMount(() => {
 		let swiper7 = new Swiper('.swiper-container-categories', {
@@ -42,6 +40,22 @@
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
+			}
+		});
+		// Handle keyboard events for the next and pre button
+
+		var prevButton = document.querySelector('.swiper-button-prev');
+		var nextButton = document.querySelector('.swiper-button-next');
+
+		prevButton.addEventListener('keydown', function (event) {
+			if (event.key === 'Enter') {
+				swiper7.slidePrev();
+			}
+		});
+
+		nextButton.addEventListener('keydown', function (event) {
+			if (event.key === 'Enter') {
+				swiper7.slideNext();
 			}
 		});
 	});

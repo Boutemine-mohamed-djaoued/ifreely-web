@@ -1,9 +1,9 @@
 <script>
-	import LandingPage from './LandingPage.svelte';
-	import TopTalent from './TopTalent.svelte';
-	import Categories from './Categories.svelte';
-	import WhyUs from './WhyUs.svelte';
-	import HearThen from './HearThen.svelte';
+	import LandingPage from './components/LandingPage.svelte';
+	import TopTalent from './components/TopTalent.svelte';
+	import Categories from './components/Categories.svelte';
+	import WhyUs from './components/WhyUs.svelte';
+	import HearThen from './components/HearThen.svelte';
 </script>
 
 <LandingPage></LandingPage>
