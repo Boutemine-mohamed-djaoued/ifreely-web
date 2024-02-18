@@ -10,13 +10,13 @@
 				Turn ideas into <span class="text-accent">reality</span>
 				<img
 					class="gear md:hidden absolute -top-10 -right-10"
-					src="home/landingPage/Gear.png"
-					alt=""
+					src="assets/home/Gear.png"
+					alt="gear"
 				/>
 				<img
 					class="play md:hidden absolute -top-20 -left-8"
-					src="home/landingPage/play.png"
-					alt=""
+					src="assets/home/play.png"
+					alt="play button"
 				/>
 			</h1>
 			<p
@@ -33,7 +33,18 @@
 					placeholder="search for a service"
 				/>
 				<button class="icon w-[20%] bg-accent grid justify-center p-2 lg:p-3">
-					<img src="home/landingPage/magnifier.svg" alt="" />
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="26"
+						height="26"
+						viewBox="0 0 26 26"
+						fill="none"
+					>
+						<path
+							d="M18.0612 15.7649H16.932L16.5318 15.379C17.9326 13.7495 18.7759 11.634 18.7759 9.33268C18.7759 4.20118 14.6164 0.0416565 9.48487 0.0416565C4.35337 0.0416565 0.193848 4.20118 0.193848 9.33268C0.193848 14.4642 4.35337 18.6237 9.48487 18.6237C11.7862 18.6237 13.9017 17.7804 15.5312 16.3796L15.9171 16.7798V17.909L23.0641 25.0417L25.1938 22.9119L18.0612 15.7649ZM9.48487 15.7649C5.92569 15.7649 3.05262 12.8919 3.05262 9.33268C3.05262 5.7735 5.92569 2.90043 9.48487 2.90043C13.044 2.90043 15.9171 5.7735 15.9171 9.33268C15.9171 12.8919 13.044 15.7649 9.48487 15.7649Z"
+							fill="white"
+						/>
+					</svg>
 				</button>
 			</div>
 			<div class="md:translate-y-12 max-md:mx-auto w-fit relative my-5">
@@ -45,19 +56,20 @@
 				>
 				<img
 					class="tags md:hidden absolute -left-20 bottom-3"
-					src="home/landingPage/tags.png"
-					alt=""
+					src="assets/home/tags.png"
+					alt="tags"
 				/>
 			</div>
 		</div>
 		<div
 			class="img max-md:hidden bg-no-repeat bg-cover aspect-[699/550] w-[clamp(20rem,55vw,50rem)]"
-			style="background-image:url('home/landingPage/landingImage-lowres.png')"
+			style="background-image:url('assets/home/landingImage-lowres.png')"
 		>
 			<img
 				class="w-full"
-				src="home/landingPage/landingImage.png"
+				src="assets/home/landingImage.png"
 				alt="laptop ilustration"
+				loading="lazy"
 			/>
 		</div>
 	</div>

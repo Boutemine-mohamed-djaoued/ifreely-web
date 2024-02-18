@@ -63,7 +63,6 @@ img {
 }
 
 html {
-	scroll-behavior : smooth ;
 	@apply bg-off-white;
 	@apply text-300;
 }
