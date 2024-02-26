@@ -1,12 +1,8 @@
 <script>
 	// global styles
 	import '../app.css';
-	import Header from '../lib/layout/Header.svelte';
-	import Footer from '../lib/layout/Footer.svelte';
 </script>
 
-<div class="grid-system overflow-y-clip">
-	<Header></Header>
+<div class="freelancer  grid-system overflow-y-clip">
 	<slot />
-  <Footer></Footer>
 </div>

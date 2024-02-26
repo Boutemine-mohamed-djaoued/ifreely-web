@@ -22,7 +22,7 @@
 	<div class="media flex items-center justify-center gap-3 md:gap-5">
 		<div class="facebook">
 			<a href="/">
-			<img class="max-md:w-7" src="home/footer/facebook.svg" alt="">
+				<img class="max-md:w-7" src="home/footer/facebook.svg" alt="" />
 			</a>
 		</div>
 		<div class="instagram">

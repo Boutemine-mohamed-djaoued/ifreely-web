@@ -17,10 +17,10 @@
 			profileImg: 'home/topTalent/profileImg3.jpg',
 			name: 'Alex Swift',
 			bio: 'UI/UX virtuoso renowned for weaving digital wonders. With a meticulous blend of precision, creative flair, and an unwavering commitment to user delight, Alex navigates the design realm, shaping immersive and intuitive experiences. His expertise extends beyond aesthetics, delving into the very essence of user interaction. In collaboration with cross-functional teams, Alex not only envisions but materializes concepts that resonate with users, setting a benchmark for exceptional design. Welcome to the world of Alex Swift, where innovation meets elegance in the ever-evolving landscape of UI/UX design. 🌐✨',
-			pr1: 'home/topTalent/pr3.jpeg',
-			pr2: 'home/topTalent/pr1.jpeg',
-			pr3: 'home/topTalent/pr2.jpeg',
-			pr4: 'home/topTalent/pr4.jpeg'
+			pr1: 'home/topTalent/pr3.1.png',
+			pr2: 'home/topTalent/pr1.1.png',
+			pr3: 'home/topTalent/pr2.1.png',
+			pr4: 'home/topTalent/pr4.1.png'
 		}
 	];
 	let swipers = [];
@@ -234,5 +234,67 @@
 	.work {
 		grid-column: 4;
 		grid-row: 1 / span 4;
+	}
+	/* animations */
+	.grid-layout > * {
+		position: relative;
+	}
+	.swiper-container-1 {
+		animation: swiper-x-back linear;
+		animation-timeline: view(calc(100vh + 2rem) 20px);
+	}
+	.swiper-container-2 {
+		animation: swiper-x-back linear;
+		animation-timeline: view(calc(100vh + 2rem) 20px);
+	}
+	.swiper-container-3 {
+		animation: swiper-y linear;
+		animation-timeline: view(calc(100vh + 1rem) 20px);
+	}
+	.swiper-container-4 {
+		animation: swiper-y linear;
+		animation-timeline: view(calc(100vh + 1rem) 20px);
+	}
+	.swiper-container-5 {
+		animation: swiper-y linear;
+		animation-timeline: view(calc(100vh + 1rem) 20px);
+	}
+	.swiper-container-6 {
+		animation: swiper-x-forward linear;
+		animation-timeline: view(calc(100vh + 1rem) 20px);
+	}
+	@keyframes swiper-y {
+		from {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+	@keyframes swiper-x-back {
+		0% {
+			opacity: 0;
+			transform: translateX(-100%);
+		}
+		20% {
+			opacity: 0;
+			transform: translateX(-100%);
+		}
+		100% {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+	@keyframes swiper-x-forward {
+		from {
+			opacity: 0;
+			transform: translateX(100%);
+		}
+		to {
+			opacity: 1;
+			transform: translateX(0);
+		}
 	}
 </style>

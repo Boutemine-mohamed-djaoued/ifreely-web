@@ -2,7 +2,7 @@
 </script>
 
 <section class="wrapper max-md:overflow-x-clip relative z-10">
-	<div class="pb-5 max-md:mt-12 md:flex justify-between items-center md:min-h-[30rem]">
+	<div class="pb-5 max-md:mt-12 md:flex justify-between items-center md:min-h-[35rem] xl:min-h-[75vh]">
 		<div class="text">
 			<h1
 				class="text-nowrap max-md:w-fit max-md:mx-auto max-md:text-center font-semibold my-5 text-600 lg:text-700 relative isolate"
