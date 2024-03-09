@@ -1,61 +1,56 @@
 <script>
-	import { Dropdown, DropdownItem } from 'flowbite-svelte';
+	import Dropdown from '$lib/components/ui/Dropdown.svelte';
 	import { onMount } from 'svelte';
+	let explore = [
+		{ path: '/', value: 'Explore 1' },
+		{ path: '/', value: 'Explore 2' },
+		{ path: '/', value: 'Explore 3' },
+		{ path: '/', value: 'Explore 4' }
+	];
 	let navbar, burgerButton;
-	onMount(() => {
-		burgerButton = document.querySelector('.bergur-menu');
-		navbar = document.querySelector('nav');
-	});
-	const handleClick = () => {
+	const handleNavbarClick = () => {
 		if (navbar.getAttribute('navbarVisibility') === 'false') {
 			navbar.setAttribute('navbarVisibility', 'true');
 		} else if (navbar.getAttribute('navbarVisibility') === 'true') {
 			navbar.setAttribute('navbarVisibility', 'false');
 		}
 	};
+	onMount(() => {
+		burgerButton = document.querySelector('.bergur-menu');
+		navbar = document.querySelector('nav');
+	});
 </script>
 
-<header class="wrapper shadow-lg sticky top-0 w-full bg-off-white z-[9999]">
+<header class="wrapper shadow-sm sticky top-0 w-full bg-off-white z-[9999]">
 	<div class="py-[0.5em] text-400 font-semibold flex justify-between bg-off-white items-center">
 		<button
 			on:click={() => {
-				handleClick();
+				handleNavbarClick();
 			}}
 			class="burger-menu md:hidden"
 		>
 			<img src="home/header/burgerMenu.svg" alt="" />
 		</button>
 		<!-- logo -->
-		<div class="text-accent text-500 max-md:pl-3">Freeli</div>
+		<div class="text-primary-300 text-500 max-md:pl-3">Freeli</div>
 		<!-- the left content nav + join -->
 		<div class="flex">
 			<nav navbarVisibility="false">
-				<ul
-					class="font-mediu max-md:ring-2 max-md:ring-off-white max-md:bg-gray-100 max-md:rounded-md max-md:absolute max-md:top-[3.5em] max-md:left-[5%] max-md:w-[90%] max-md:px-5 max-md:py-3 md:flex items-center gap-5"
-				>
+				<ul class="font-semibold bg-off-white">
 					<li>
 						<button
-							class="max-md:focus:bg-gray-200 max-md:w-full p-[0.5em] focus-visible:ring-2 ring-black rounded-sm"
+							class="max-md:border-t-2 max-md:focus:text-primary-300 max-md:w-full p-[0.5em] focus-visible:ring-2 ring-black rounded-sm"
 						>
 							<img class="inline-block" src="home/header/Globe.png" alt="" /> English
 						</button>
 					</li>
-					<li>
-						<button class=" max-md:focus:bg-gray-200 max-md:w-full rounded-md p-[0.5em]">
-							Explore
-							<img class="inline-block" src="home/header/downArrow.svg" alt="" />
-						</button>
+					<li class="explore">
+						<Dropdown title={'Explore'} options={explore}></Dropdown>
 					</li>
-					<Dropdown class="bg-off-white" offset="15">
-						<DropdownItem>Dashboard</DropdownItem>
-						<DropdownItem>Settings</DropdownItem>
-						<DropdownItem>Earnings</DropdownItem>
-						<DropdownItem>Sign out</DropdownItem>
-					</Dropdown>
 					<li>
 						<a
-							href="/"
-							class=" inline-block max-md:hover:bg-gray-200 max-md:w-full p-[0.5em] md:focus-visible:ring-2 ring-black rounded-sm"
+							href="/freelancer"
+							class=" inline-block max-md:hover:text-primary-300 max-md:w-full p-[0.5em] md:focus-visible:ring-2 ring-black rounded-sm"
 							>Log in</a
 						>
 					</li>
@@ -68,11 +63,17 @@
 
 <style>
 	@media (max-width: 767px) {
+		ul {
+			@apply absolute top-[3rem] h-[100vh] w-full left-0 px-5 py-3;
+		}
 		nav ul {
 			transition: transform 0.7s ease-in-out;
 			z-index: -1;
 		}
 
+		ul li {
+			@apply border-b-2;
+		}
 		nav[navbarVisibility='false'] ul {
 			transform: translateY(-120%);
 		}
@@ -81,9 +82,12 @@
 		}
 	}
 	@media (min-width: 768px) {
-		ul li:hover,
+		ul {
+			@apply flex items-center gap-5;
+		}
+		ul li:hover:not(.explore),
 		.join:hover {
-			@apply text-accent;
+			@apply text-primary-300;
 			cursor: pointer;
 		}
 	}

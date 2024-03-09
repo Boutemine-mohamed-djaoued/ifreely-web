@@ -5,12 +5,6 @@
 	let ratings = [
 		{
 			name: 'Michael Angelo | Marketing Director',
-			stars: [1, 2, 3, 4, 5],
-			comment: 'why us',
-			profileImg: 'home/hearThem/profileImg3.jpg'
-		},
-		{
-			name: 'Michael Angelo | Marketing Director',
 			stars: [1, 2, 3, 4],
 			comment:
 				"As a marketing leader, I've found [Platform Name] to be a game-changer. The user-friendly interface, diverse talent pool, and transparent payment system have streamlined our project workflows. The emphasis on community and networking adds immense value, creating a collaborative environment",
@@ -89,7 +83,12 @@
 							<div
 								class="profile-img overflow-clip xl:mx-5 bg-gray-200 rounded-full aspect-square min-w-[4rem] lg:row-start-1 lg:row-end-3"
 							>
-								<img class="w-full h-full" src={rating.profileImg} alt="profile img" loading="lazy" />
+								<img
+									class="w-full h-full"
+									src={rating.profileImg}
+									alt="profile img"
+									loading="lazy"
+								/>
 							</div>
 							<div>
 								<div

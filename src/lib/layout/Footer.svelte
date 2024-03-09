@@ -22,7 +22,7 @@
 	<div class="media flex items-center justify-center gap-3 md:gap-5">
 		<div class="facebook">
 			<a href="/">
-			<img class="max-md:w-7" src="home/footer/facebook.svg" alt="">
+				<img class="max-md:w-7" src="home/footer/facebook.svg" alt="" />
 			</a>
 		</div>
 		<div class="instagram">
@@ -39,14 +39,14 @@
 	</div>
 	<a
 		href="/"
-		class="join text-white max-md:w-52 text-center bg-accent font-bold text-300 md:text-400 px-8 md:px-20 py-3 md:py-4 rounded-md"
+		class="join text-white max-md:w-52 text-center bg-primary-300 font-bold text-300 md:text-400 px-8 md:px-20 py-3 md:py-4 rounded-md"
 		>Join Freeli Now!</a
 	>
 </footer>
 
 <style>
 	.links a:hover {
-		color: #ff00a8;
+		@apply text-primary-300;
 		font-weight: bold;
 		opacity: 0.8;
 	}

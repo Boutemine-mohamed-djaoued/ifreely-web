@@ -61,9 +61,13 @@
 	});
 </script>
 
-<section class="wrapper relative isolate overflow-x-clip max-sm:after:hidden max-md:before:hidden min-h-[25rem]">
+<section
+	class="wrapper relative isolate overflow-x-clip max-sm:after:hidden max-md:before:hidden min-h-[25rem]"
+>
 	<div class="full-width2 py-5 md:py-20">
-		<h2 class="max-md:ml-[clamp(0.5rem,5vw,2rem)] text-600 md:text-700 font-bold mb-2 md:mb-5">Categories</h2>
+		<h2 class="max-md:ml-[clamp(0.5rem,5vw,2rem)] text-600 md:text-700 font-bold mb-2 md:mb-5">
+			Categories
+		</h2>
 		<div class="swiper swiper-container-categories md:w-full">
 			<div class="swiper-wrapper">
 				{#if categories}
@@ -73,7 +77,7 @@
 								{categorie.title}
 							</h3>
 							<img
-								class="mx-auto max-md:max-h-[15rem] shadow-lg ring-1 ring-black ring-opacity-5 rounded-lg relative  bg-gray-200"
+								class="mx-auto max-md:max-h-[15rem] shadow-lg ring-1 ring-black ring-opacity-5 rounded-lg relative bg-gray-200"
 								src={categorie.url}
 								alt="{categorie.title} illustration image"
 							/>
