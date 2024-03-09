@@ -1,4 +1,8 @@
 <script>
+	import { showDetails } from './../../../lib/stores/FeedState.js';
+	const handleClick = () => {
+		showDetails.set(1);
+	};
 	let gigNum = 911;
 	let gigs = [
 		{
@@ -143,7 +147,10 @@
 	</div>
 	<div>
 		{#each gigs as gig}
-			<div class="flex items-start rounded-md gap-3 md:gap-5 bg-white p-3 md:p-5 my-3 md:my-5">
+			<button
+				on:click={() => handleClick()}
+				class="flex text-left items-start rounded-md gap-3 md:gap-5 bg-white p-3 md:p-5 my-3 md:my-5"
+			>
 				<div class="max-md:hidden shrink-0 md:w-16 lg:w-24 aspect-square rounded-md bg-gray-200">
 					<img src="" alt="" />
 				</div>
@@ -170,7 +177,7 @@
 					</div>
 					<p class="text-gray-500 my-4">{gig.description}</p>
 				</div>
-			</div>
+			</button>
 		{/each}
 	</div>
 </main>

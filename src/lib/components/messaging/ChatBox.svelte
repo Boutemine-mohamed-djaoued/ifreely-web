@@ -98,10 +98,10 @@
 
 <style>
 	main {
-		height: calc(100svh - 4.7rem);
+		height: calc(100dvh - 4.7rem);
 	}
 	.box {
-		height: calc(100svh - 4.7rem - 8.5rem);
+		height: calc(100dvh - 4.7rem - 8.5rem);
 	}
 	::-webkit-scrollbar {
 		width: 0px; /* Remove scrollbar space */
@@ -113,7 +113,7 @@
 			font-size: 0.98em;
 		}
 		main {
-			height: calc(100svh - 4rem);
+			height: calc(100dvh - 4rem);
 		}
 	}
 </style>

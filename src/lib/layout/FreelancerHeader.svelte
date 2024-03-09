@@ -15,7 +15,6 @@
 		{ path: '/', value: 'job 4' }
 	];
 	let navbar, burgerButton;
-	let search = false;
 	const handleNavbarClick = () => {
 		if (navbar.getAttribute('navbarVisibility') === 'false') {
 			navbar.setAttribute('navbarVisibility', 'true');
@@ -23,16 +22,13 @@
 			navbar.setAttribute('navbarVisibility', 'false');
 		}
 	};
-	const handSearchClick = () => {
-		search = !search;
-	};
 	onMount(() => {
 		burgerButton = document.querySelector('.bergur-menu');
 		navbar = document.querySelector('nav');
 	});
 </script>
 
-<header class="wrapper min-h-14 shadow-sm sticky top-0 w-full bg-off-white z-[9999]">
+<header class="wrapper min-h-14 h-15 shadow-sm sticky top-0 w-full bg-off-white z-[9999]">
 	<div class="py-[0.5em] text-400 flex items-center font-bold bg-off-white">
 		<!-- burger menu button -->
 		<button
@@ -44,7 +40,7 @@
 			<img src="/home/header/burgerMenu.svg" alt="" />
 		</button>
 		<!-- logo -->
-		<div class:hide={search} class="text-accent text-500 md:mr-7">Freeli</div>
+		<a href="/" class="text-accent text-500 ml-3 md:mr-7">Freeli</a>
 		<!-- the navigation  -->
 		<nav navbarVisibility="false" class="max-md:w-0 md:w-full">
 			<ul class="font-semibold bg-off-white">
@@ -56,7 +52,7 @@
 				>
 					<a href="/freelancer">Home</a>
 				</li>
-				<li 	class="jobs">
+				<li class="jobs">
 					<Dropdown title={'Jobs'} options={jobs}></Dropdown>
 				</li>
 				<li
@@ -84,44 +80,14 @@
 				</li>
 			</ul>
 		</nav>
-		<!-- search input -->
-		<input
-			class:hide={!search}
-			class="min-w-0 md:max-lg:hidden mx-8 lg:max-xl:mr-0 font-meduim rounded-full h-9 focus:ring-0 focus:outline-none"
-			placeholder="search"
-			type="text"
-		/>
 		<!-- proifle img -->
-		<div class="max-md:hidden">
-			<img class="ml-5" src="/defaultProfile.svg" alt="" />
+		<div class="ml-auto md:ml-5">
+			<img class="max-md:w-10" src="/defaultProfile.svg" alt="" />
 		</div>
-		<!-- search button -->
-		<button
-			on:click={() => {
-				handSearchClick();
-			}}
-			class:hide={search}
-			class="md:hidden ml-auto"
-		>
-			<img src="/freelancer/header/search.svg" alt="" />
-		</button>
-		<!-- exit search -->
-		<button
-			on:click={() => {
-				handSearchClick();
-			}}
-			class:hide={!search}
-			class="md:hidden shrink-0 ml-auto w-4"
-		>
-			<img src="/freelancer/header/close.png" alt="" />
-		</button>
 	</div>
 </header>
 
 <style>
-	ul li {
-		flex-shrink: 0;
-	}
 	@media (max-width: 767px) {
 		ul {
 			@apply absolute top-[3rem] h-[100vh] w-full left-0 px-5 py-3;
@@ -139,9 +105,6 @@
 		}
 		ul li button {
 			text-align: left;
-		}
-		.hide {
-			display: none;
 		}
 	}
 	@media (min-width: 768px) {

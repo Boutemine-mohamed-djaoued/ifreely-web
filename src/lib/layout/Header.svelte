@@ -21,7 +21,7 @@
 	});
 </script>
 
-<header class="wrapper shadow-lg sticky top-0 w-full bg-off-white z-[9999]">
+<header class="wrapper shadow-sm sticky top-0 w-full bg-off-white z-[9999]">
 	<div class="py-[0.5em] text-400 font-semibold flex justify-between bg-off-white items-center">
 		<button
 			on:click={() => {
@@ -32,14 +32,14 @@
 			<img src="home/header/burgerMenu.svg" alt="" />
 		</button>
 		<!-- logo -->
-		<div class="text-accent text-500 max-md:pl-3">Freeli</div>
+		<div class="text-primary-300 text-500 max-md:pl-3">Freeli</div>
 		<!-- the left content nav + join -->
 		<div class="flex">
 			<nav navbarVisibility="false">
 				<ul class="font-semibold bg-off-white">
 					<li>
 						<button
-							class="max-md:border-t-2 max-md:focus:text-accent max-md:w-full p-[0.5em] focus-visible:ring-2 ring-black rounded-sm"
+							class="max-md:border-t-2 max-md:focus:text-primary-300 max-md:w-full p-[0.5em] focus-visible:ring-2 ring-black rounded-sm"
 						>
 							<img class="inline-block" src="home/header/Globe.png" alt="" /> English
 						</button>
@@ -50,7 +50,7 @@
 					<li>
 						<a
 							href="/freelancer"
-							class=" inline-block max-md:hover:text-accent max-md:w-full p-[0.5em] md:focus-visible:ring-2 ring-black rounded-sm"
+							class=" inline-block max-md:hover:text-primary-300 max-md:w-full p-[0.5em] md:focus-visible:ring-2 ring-black rounded-sm"
 							>Log in</a
 						>
 					</li>
@@ -87,7 +87,7 @@
 		}
 		ul li:hover:not(.explore),
 		.join:hover {
-			@apply text-accent;
+			@apply text-primary-300;
 			cursor: pointer;
 		}
 	}

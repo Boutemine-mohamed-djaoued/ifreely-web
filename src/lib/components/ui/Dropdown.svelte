@@ -9,7 +9,7 @@
 
 <div class="explore max-md:w-full rounded-md p-[0.5em] max-md:text-left">
 	<button
-		class="md:hover:text-accent"
+		class="md:hover:text-primary-300"
 		on:click={() => {
 			handleExploreClick();
 		}}
@@ -35,10 +35,10 @@
 		grid-template-rows: 0fr;
 	}
 	.explore:has(.down) button {
-		@apply text-accent;
+		@apply text-primary-300;
 	}
 	a:hover {
-		@apply text-accent;
+		@apply text-primary-300;
 	}
 	.dropdown > div {
 		overflow: hidden;

@@ -31,7 +31,7 @@
 	];
 </script>
 
-<aside class="bg-white w-full p-5 mb-5">
+<aside class="bg-white w-full p-5 mb-5 rounded-lg">
 	<h2 class="my-3 md:my-4 md:text-400 font-semibold">Filters</h2>
 	{#each filters as filter}
 		<form>
@@ -59,7 +59,7 @@
 
 <style>
 	input[type='radio']:checked {
-		@apply bg-gray-300;
+		@apply bg-primary-300;
 	}
 	input[type='radio'] {
 		@apply ring-0 outline-none;

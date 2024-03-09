@@ -30,6 +30,26 @@ let data = writable([
     content: '/home/sleepwell/freelance/static/home/whyUs/greenPeople.png',
     time: '12:00 PM',
     type: 'img'
+  }, {
+    sender: 'you',
+    content: 'the color looks too much off and overall i do not like how you set typography',
+    time: '12:00 PM',
+    type: 'text'
+  }, {
+    sender: 'you',
+    content: 'is the end of the game',
+    time: '12:00 PM',
+    type: 'text'
+  }, {
+    sender: 'you',
+    content: 'the best ',
+    time: '12:00 PM',
+    type: 'text'
+  }, {
+    sender: 'you',
+    content: 'but why',
+    time: '12:00 PM',
+    type: 'text'
   }
 ]);
 let chatBool = writable(false);

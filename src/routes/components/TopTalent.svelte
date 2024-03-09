@@ -62,7 +62,7 @@
 
 <section class="wrapper py-5 md:py-10 bg-gray-100 relative isolate overflow-x-clip">
 	<h2 class="text-600 md:text-700 font-bold mb-2 md:mb-4">
-		Top <span class="text-accent">Talent</span>&nbsp; :
+		Top <span class="text-primary-300">Talent</span>&nbsp; :
 	</h2>
 	<div
 		class="grid-layout justify-center mx-10 max-lg:flex max-md:gap-3 max-md:mx-4 md:grid md:gap-3 xl:gap-5"
@@ -130,7 +130,7 @@
 		</div>
 		<div class="work max-md:hidden my-auto font-bold text-white text-500 xl:text-600 text-nowrap">
 			<div class="w-fit rotate-90 bg-black py-3 md:px-20 xl:px-28 relative md:right-24 xl:right-36">
-				My <span class="text-accent">work</span>
+				My <span class="text-primary-300">work</span>
 			</div>
 		</div>
 	</div>
@@ -147,7 +147,7 @@
 	<button
 		class="mx-auto mt-5 md:my-5 text-center w-[min(45vw,50rem)] text-300 sm:text-500 xl:text-600 font-bold py-2 lg:py-3 text-white bg-off-black"
 	>
-		Contact <span class="text-accent">Michael</span> !
+		Contact <span class="text-primary-300">Michael</span> !
 	</button>
 </section>
 
