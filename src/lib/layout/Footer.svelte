@@ -40,7 +40,7 @@
 			>
 		</div>
 		<div class="gmail">
-			<a href="mailto:djawadboutemine2004@gmail.com">
+			<a href="mailto:ifreelyifreely@gmail.com">
 				<img class="max-md:w-8" src="/home/footer/gmail.svg" alt="" /></a
 			>
 		</div>

@@ -40,7 +40,7 @@
 			<img src="/home/header/burgerMenu.svg" alt="" />
 		</button>
 		<!-- logo -->
-		<a href="/" class="text-accent text-500 ml-3 md:mr-7">Freeli</a>
+		<a href="/" class="text-primary-300 text-500 ml-3 md:mr-7">Freeli</a>
 		<!-- the navigation  -->
 		<nav navbarVisibility="false" class="max-md:w-0 md:w-full">
 			<ul class="font-semibold bg-off-white">
@@ -65,7 +65,7 @@
 				</li>
 				<li>
 					<button
-						class="max-md:focus:text-accent max-md:w-full p-[0.5em] focus-visible:ring-2 ring-black rounded-sm"
+						class="max-md:focus:text-primary-300 max-md:w-full p-[0.5em] focus-visible:ring-2 ring-black rounded-sm"
 					>
 						<img class="inline-block" src="/home/header/Globe.png" alt="" /> English
 					</button>
@@ -113,7 +113,7 @@
 		}
 		ul li:hover:not(.explore, .jobs, .messages),
 		.join:hover {
-			@apply text-accent;
+			@apply text-primary-300;
 			cursor: pointer;
 		}
 	}

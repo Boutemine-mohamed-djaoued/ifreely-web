@@ -1,18 +1,19 @@
 <script>
-	import { showDetails } from './../../lib/stores/FeedState.js';
+	import { showDetails, showFilters } from './../../lib/stores/FeedState.js';
 	import Apply from './components/Apply.svelte';
 	import Details from './components/Details.svelte';
 	import Feed from './components/Feed.svelte';
 	import Filters from './components/Filters.svelte';
 	import Searching from './components/Searching.svelte';
-	showDetails.subscribe((value) => {
-		console.log(value);
-	});
 </script>
 
+<div></div>
 <Searching></Searching>
 <div class="flex">
-	<div class="max-md:w-full left-0 md:w-[20rem] min-w-fit max-md:absolute max-md:hidden">
+	<div
+		class:hide-filters={!$showFilters}
+		class="filters max-md:w-full left-0 md:w-[20rem] min-w-fit max-md:absolute"
+	>
 		<Filters></Filters>
 	</div>
 	<div>
@@ -37,8 +38,20 @@
 </div>
 
 <style>
-	.details {
+	.details,
+	.filters {
 		transition: transform 1s ease;
+	}
+
+	@media (width < 768px) {
+		.filters {
+			overflow-y: scroll;
+			top: 4rem;
+			height: calc(100vh - 4rem);
+		}
+		.hide-filters {
+			transform: translateX(-100%);
+		}
 	}
 	.in-screen-right {
 		transform: translateX(calc(100vw - 100%));

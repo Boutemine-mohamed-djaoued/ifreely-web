@@ -1,9 +1,9 @@
 <script>
+	import { showFilters } from '$lib/stores/FeedState.js';
 	let filters = [
 		{
 			title: 'Location',
 			values: [
-				'Location',
 				'Near me',
 				'Any location',
 				'Exact location',
@@ -31,8 +31,13 @@
 	];
 </script>
 
-<aside class="bg-white w-full p-5 mb-5 rounded-lg">
-	<h2 class="my-3 md:my-4 md:text-400 font-semibold">Filters</h2>
+<aside class="bg-white w-full p-5 md:mb-5 rounded-lg">
+	<div class="flex justify-between items-center">
+		<h2 class="my-3 md:my-4 text-400 font-semibold">Filters</h2>
+		<button on:click={() => showFilters.set(false)}>
+			<img class="w-5" src="/general/back.svg" alt="" />
+		</button>
+	</div>
 	{#each filters as filter}
 		<form>
 			<h3 class="my-2 md:my-3 font-semibold">{filter.title}</h3>
