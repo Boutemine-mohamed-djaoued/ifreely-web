@@ -19,22 +19,30 @@
 			<a href="/">Music jamming</a><a href="/">flying</a><a href="/">poetry</a>
 		</div>
 	</div>
+	<div class="phone flex mx-auto items-center text-400 font-semibold my-3 gap-2">
+		<img class="max-md:w-8" src="/general/phone.svg" alt="" />
+		0673862497
+	</div>
 	<div class="media flex items-center justify-center gap-3 md:gap-5">
 		<div class="facebook">
 			<a href="/">
-				<img class="max-md:w-7" src="home/footer/facebook.svg" alt="" />
+				<img class="max-md:w-7" src="/home/footer/facebook.svg" alt="" />
 			</a>
 		</div>
 		<div class="instagram">
 			<a href="/">
-				<img class="max-md:w-8" src="home/footer/Instagram.png" alt="" />
+				<img class="max-md:w-8" src="/home/footer/Instagram.png" alt="" />
 			</a>
 		</div>
-		<div class="youtube">
-			<a href="/"> <img class="max-md:w-8" src="home/footer/YouTube.png" alt="" /></a>
+		<div class="whatsup border-b-2">
+			<a href="https://wa.me/213673862497" target="_blank">
+				<img class="max-md:w-8" src="/home/footer/whatsup.svg" alt="" /></a
+			>
 		</div>
-		<div class="tiktok">
-			<a href="/"> <img class="max-md:w-8" src="home/footer/TikTok.png" alt="" /></a>
+		<div class="gmail">
+			<a href="mailto:djawadboutemine2004@gmail.com">
+				<img class="max-md:w-8" src="/home/footer/gmail.svg" alt="" /></a
+			>
 		</div>
 	</div>
 	<a
