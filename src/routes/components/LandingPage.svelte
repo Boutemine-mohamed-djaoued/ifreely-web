@@ -35,7 +35,7 @@
 					placeholder="search for a service"
 				/>
 				<button class="icon w-[20%] bg-primary-300 grid justify-center p-2 lg:p-3">
-					<img src="home/landingPage/magnifier.svg" alt="" />
+					<img src="/general/magnifier.svg" alt="" />
 				</button>
 			</div>
 			<div class="md:translate-y-12 max-md:mx-auto w-fit relative my-5">
@@ -54,9 +54,9 @@
 		</div>
 		<div
 			class="img max-md:hidden bg-no-repeat bg-cover aspect-[699/550] w-[clamp(20rem,55vw,50rem)]"
-			style="background-image:url('home/landingPage/landingImage-lowres.png')"
+			style="background-image:url('home/landingPage/landingImage2-lowres.webp')"
 		>
-			<img class="w-full" src="home/landingPage/landingImage.webp" alt="laptop ilustration" />
+			<img class="w-full" src="home/landingPage/landingImage2.webp" alt="laptop ilustration" />
 		</div>
 	</div>
 </section>
